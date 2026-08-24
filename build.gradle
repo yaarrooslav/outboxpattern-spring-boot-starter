@@ -14,9 +14,6 @@ java {
     }
 }
 
-repositories {
-    mavenCentral()
-}
 dependencyManagement {
     imports {
         mavenBom "org.springframework.boot:spring-boot-dependencies:3.2.0"
@@ -26,6 +23,7 @@ dependencyManagement {
 dependencies {
     implementation 'org.springframework.kafka:spring-kafka:3.2.4'
     implementation 'org.projectlombok:lombok:1.18.46'
+    annotationProcessor 'org.projectlombok:lombok'
     implementation 'com.fasterxml.jackson.core:jackson-databind'
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
