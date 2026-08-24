@@ -1,3 +1,5 @@
 spring:
   application:
     name: outboxpattern-spring-boot-starter
+  kafka:
+    bootstrap-server: localhost:9092
